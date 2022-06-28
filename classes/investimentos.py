@@ -3,6 +3,7 @@ faixaInicialInvestimento = str(1000)
 faixaDeInvestimentoPlus = str(12000)
 taxaFaixaInicial = float(0.4)
 taxaFaixaPlus = float(0.8)
+prazoDozeMeses = float(0.12)
 
 def inicioInvestimento():
     aporteCliente = input("Digite seu aporte: ")   
@@ -17,4 +18,5 @@ def inicioInvestimento():
 
 def investimentoEmUmAno():
     aporteCliente = input("Digite qual prazo de investimento: ")   
-    print("O resultado será de " + aporteCliente)
+    prazoEmMeses = float(aporteCliente)* prazoDozeMeses
+    print("O resultado será de " + str(prazoEmMeses) + aporteCliente)

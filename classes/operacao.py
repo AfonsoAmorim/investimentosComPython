@@ -3,8 +3,9 @@ import cliente
 import investimentos
 
 analista = analista.Analista("Jonas",556665314)
-analista.infoAnalista()
+#analista.infoAnalista()
 cliente = cliente.Cliente("Ana",23)
 cliente.informacao()
 investimentos.inicioInvestimento()
 investimentos.investimentoEmUmAno()
+print(analista.infoAnalista())
